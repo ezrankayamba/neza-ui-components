@@ -1,0 +1,11 @@
+:root {
+  --avatar-size: 36px;
+}
+
+.avatar {
+  display: flex;
+}
+.avatar img {
+  width: var(--avatar-size);
+  border-radius: 50%;
+}

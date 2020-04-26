@@ -1,0 +1,21 @@
+{
+  "name": "neza-ui-components",
+  "version": "1.0.0",
+  "description": "UI components for web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezrankayamba/neza-ui-components.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezrankayamba/neza-ui-components/issues"
+  },
+  "homepage": "https://github.com/ezrankayamba/neza-ui-components#readme",
+  "dependencies": {}
+}

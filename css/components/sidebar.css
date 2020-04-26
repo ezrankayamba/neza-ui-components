@@ -1,0 +1,83 @@
+:root {
+  --sidebar-bg-color: rgb(57, 86, 110);
+  --sidebar-menu-bg-color: rgb(53, 80, 102);
+  --sidebar-menu-active-bg-color: rgb(108, 161, 204);
+  --sidebar-menu-text-color: rgb(148, 184, 214);
+  --sidebar-width: 250px;
+}
+
+.sidebar {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 100;
+  display: none;
+}
+
+.sidebar.show {
+  display: block;
+}
+.sidebar-content {
+  background: var(--sidebar-bg-color);
+  width: 70%;
+  height: 100vh;
+  opacity: 1;
+}
+.sidebar-title {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid rgb(86, 86, 116);
+  font-weight: bolder;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: var(--sidebar-bg-color);
+}
+.sidebar-title .sidebar-close {
+  color: red;
+}
+.sidebar-menu {
+  padding-bottom: 0.5rem;
+}
+.sidebar-menu li {
+  background: var(--sidebar-menu-bg-color);
+  margin-bottom: 0.2rem;
+}
+.sidebar-menu li.active {
+  background: var(--sidebar-menu-active-bg-color);
+}
+.sidebar-menu li a {
+  text-decoration: none;
+  line-height: 2.4rem;
+  padding: 0 1rem;
+  font-size: 16px;
+  display: block;
+  color: var(--sidebar-menu-text-color);
+}
+.sidebar-menu li.active a {
+  color: var(--sidebar-menu-bg-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    display: block;
+    width: var(--sidebar-width);
+  }
+  .sidebar-content {
+    width: 100%;
+  }
+  .sidebar-menu-toggle {
+    display: none;
+  }
+  .navbar {
+    padding-left: var(--sidebar-width);
+  }
+  .navbar-title {
+    padding-left: 1rem;
+  }
+  .sidebar-close {
+    display: none;
+  }
+}
