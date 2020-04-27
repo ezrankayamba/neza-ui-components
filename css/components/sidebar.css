@@ -23,6 +23,7 @@
   width: 70%;
   height: 100vh;
   opacity: 1;
+  box-shadow: 0 0 4px #999;
 }
 .sidebar-title {
   padding: 0.7rem 1rem;
@@ -71,7 +72,8 @@
   .sidebar-menu-toggle {
     display: none;
   }
-  .navbar {
+  .navbar,
+  .main-content-wraper {
     padding-left: var(--sidebar-width);
   }
   .navbar-title {
